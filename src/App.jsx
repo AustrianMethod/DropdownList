@@ -18,7 +18,7 @@ function DropdownList({list, isVisible}) {
   return (
     <ul className='dropdown' style={{ visibility: isVisible }}>
       {list.map( item => (
-        <DropdownItem item={item}/>
+        <DropdownItem item={item} key={item}/>
       ))}  
     </ul>
   )
